@@ -13,3 +13,11 @@ inputs:
  region: ap-guangzhou
  bucketName: my-bucket
  protocol: https
+ serviceName: serverless
+ environment: release
+ customDomains:
+    - domain: www.larryane.xyz
+      # 如要添加https，需先行在腾讯云-SSL证书进行认证获取cettificateId
+      certificateId: nIevyJyz
+      protocols:
+        - https
